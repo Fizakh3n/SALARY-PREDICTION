@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Salary Prediction</h1>
+        <form method="POST" action="/">
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="Age" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="Gender" required>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="education">Education Level:</label>
+                <select id="education" name="Education Level" required>
+                    <option value="Grad">Grad</option>
+                    <option value="Post Grad">Post Grad</option>
+                    <option value="PhD">PhD</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="job">Job Title:</label>
+                <select id="job" name="Job Title" required>
+                    <option value="Director of Marketing">Director of Marketing</option>
+                    <option value="Director of Operations">Director of Operations</option>
+                    <option value="Others">Others</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="experience">Years of Experience:</label>
+                <input type="number" id="experience" name="Years of Experience" required>
+            </div>
+            <button type="submit">Predict Salary</button>
+        </form>
+        {% if predicted_salary %}
+        <div class="result">
+            <h2>Estimated Salary: {{ predicted_salary }}</h2>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
