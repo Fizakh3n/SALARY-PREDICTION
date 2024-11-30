@@ -1,9 +1,5 @@
 MIT License
 
-Copyright (c) [2024] [Fiza Khan]
-
-# Simple License
-
 This project is open-source and free to use. You can:
 
 - Use it for personal or commercial purposes
