@@ -1,4 +1,3 @@
-# SALARY-PREDICTION
 # Salary Prediction Project
 
 ## Overview
@@ -27,20 +26,21 @@ This project is a Salary Prediction application that predicts the salary of an i
 Make sure you have Python installed on your machine. You can download it from [python.org](https://www.python.org/downloads/).
 
 ### Clone the Repository
-```bash
-git clone https://github.com/your-username/salary-prediction.git
-cd salary-prediction
+<pre>git clone https://github.com/your-username/salary-prediction.git
+cd salary-prediction</pre>
 
 ##Install Required Packages
-pip install -r requirements.txt
+<pre>pip install -r requirements.txt</pre>
+
 
 Usage
-python app.py
+<pre>python app.py</pre>
 
 
-Contributing
+
+## Contributing
 Contributions are welcome! Please feel free to submit a pull request or open an issue if you have suggestions or improvements.
 
 
-License
+## License
 This project is licensed under the MIT License. See the LICENSE file for details.
